@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:id="@+id/parent_layout"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/family_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+
+        android:layout_toStartOf="@+id/requestButton"
+        android:text="Family"
+        android:textSize="18sp"
+        android:layout_centerVertical="true"
+        />
+
+    <TextView
+        android:id="@+id/car_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/family_name"
+        android:layout_toStartOf="@+id/requestButton"
+        android:layout_alignParentStart="true"
+        android:text="Car"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/requestButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:text="@string/request_button"
+        android:tag = "caridhere"
+        android:onClick="requestKeyFromFamily"/>
+</RelativeLayout>
